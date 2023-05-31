@@ -1,0 +1,1 @@
+C:\wasm\rust\solver-mt\target\wasm32-unknown-unknown\release\solver.wasm: C:\wasm\rust\solver-mt\../solver-src/lib.rs C:\wasm\rust\solver-mt\../solver-src\rayon_adapter.rs C:\wasm\rust\solver-mt\workerHelpers.js

@@ -1,0 +1,2 @@
+cargo:rustc-cfg=memchr_runtime_simd
+cargo:rustc-cfg=memchr_runtime_wasm128

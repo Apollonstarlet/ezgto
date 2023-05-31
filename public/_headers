@@ -1,0 +1,15 @@
+/*
+  Cross-Origin-Embedder-Policy: require-corp
+  Cross-Origin-Opener-Policy: same-origin
+
+/
+  Cache-Control: no-cache
+
+/*.css
+  Cache-Control: max-age=2592000, immutable
+
+/*.js
+  Cache-Control: max-age=2592000, immutable
+
+/*.wasm
+  Cache-Control: max-age=2592000, immutable

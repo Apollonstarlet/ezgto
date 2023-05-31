@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  line-height: 1.6;
+}
+
+.snug * {
+  @apply leading-tight;
+}
+
+body {
+  @apply bg-gray-50;
+  font-family: system-ui, "Noto Sans", "Open Sans", Roboto, sans-serif;
+}
+
+.button-base {
+  @apply rounded-lg shadow px-3.5 py-1.5 text-white text-sm font-semibold;
+  @apply transition-colors disabled:opacity-40;
+}
+
+.button-blue {
+  @apply bg-blue-600 hover:bg-blue-700 active:bg-blue-800 disabled:bg-blue-600;
+}
+
+.button-red {
+  @apply bg-red-600 hover:bg-red-700 active:bg-red-800 disabled:bg-red-600;
+}
+
+.button-green {
+  @apply bg-green-600 hover:bg-green-700 active:bg-green-800 disabled:bg-green-600;
+}
+
+input.input-error {
+  @apply !ring-1 !ring-red-600 !border-red-600 !bg-red-50;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.spinner {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: linear-gradient(to right, #404040 10%, rgba(64, 64, 64, 0) 42%);
+  position: relative;
+  animation: spinner-animation 0.8s infinite linear;
+  transform: translateZ(0);
+}
+
+.spinner::before {
+  width: 50%;
+  height: 50%;
+  background: #404040;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
+
+.spinner::after {
+  @apply bg-gray-50;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes spinner-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
